@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>CSS-Dropdown Example</title>
+		<style>
+			#menu {
+				overflow: hidden;
+			}
+
+			#menu ul {
+				list-style: none;
+				text-align: center;
+			}
+
+			#menu ul li {
+				display: inline-block;
+				text-align: left;
+			}
+
+			#menu ul li ul {
+				display: inline;
+				position: absolute;
+				visibility: hidden;
+			}
+
+			#menu ul li ul li {
+				float: none;
+				display: block;
+				margin-left: -40px; /* zentrierung */
+				text-align: left;
+			}
+
+			#menu  ul li:hover > ul {
+				visibility: visible;
+			}
+
+			#menu a {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="menu">
+			<ul>
+				<li><a href="#">One</a></li>
+				<li><a href="#">Another one</a>
+					<ul>
+						<li><a href="#">- I am a</a></li>
+						<li><a href="#">- Submenu</a></li>
+					</ul>
+				</li>
+				<li><a href="#">And another</a>
+					<ul>
+						<li><a href="#">- More</a></li>
+						<li><a href="#">- Links</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

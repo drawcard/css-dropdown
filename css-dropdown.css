@@ -4,9 +4,22 @@
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+#menu {
+	overflow: hidden;
+}
+
+#menu ul {
+	list-style: none;
+	text-align: center;
+}
+
+#menu ul li {
+	display: inline-block;
+	text-align: left;
+}
+
 #menu ul li ul {
 	display: inline;
-	padding: 0;
 	position: absolute;
 	visibility: hidden;
 }
@@ -14,13 +27,14 @@
 #menu ul li ul li {
 	float: none;
 	display: block;
-	background: #ffffff;
-	border: 1px solid #E3E3E3;
-	border-top: 0px none;
-	margin-left: -26px;
+	margin-left: -40px; /* zentrierung */
 	text-align: left;
 }
 
 #menu  ul li:hover > ul {
-    visibility: visible;
+	visibility: visible;
+}
+
+#menu a {
+	display: block;
 }
