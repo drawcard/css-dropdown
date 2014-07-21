@@ -1,0 +1,26 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+    CSS Styles for Dropdown Menu
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#menu ul li ul {
+	display: inline;
+	padding: 0;
+	position: absolute;
+	visibility: hidden;
+}
+
+#menu ul li ul li {
+	float: none;
+	display: block;
+	background: #ffffff;
+	border: 1px solid #E3E3E3;
+	border-top: 0px none;
+	margin-left: -26px;
+	text-align: left;
+}
+
+#menu  ul li:hover > ul {
+    visibility: visible;
+}
