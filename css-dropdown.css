@@ -22,12 +22,12 @@
 	display: inline;
 	position: absolute;
 	visibility: hidden;
+	padding: 0;
 }
 
 #menu ul li ul li {
 	float: none;
 	display: block;
-	margin-left: -40px; /* zentrierung */
 	text-align: left;
 }
 
